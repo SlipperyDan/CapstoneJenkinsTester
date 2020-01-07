@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Test B.O. 1.0') {
+    stage('Test 2') {
       steps {
-        echo 'Commit Notice Test 1'
+        echo 'qwerfgth'
       }
     }
 
