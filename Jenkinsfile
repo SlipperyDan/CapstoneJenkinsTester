@@ -8,20 +8,8 @@ pipeline {
     }
 
     stage('Kick Off A Powershell script') {
-      parallel {
-        stage('Kick Off A Powershell script') {
-          steps {
-            powershell 'Write-Host \'Jim is amazing\''
-          }
-        }
-
-        stage('Kick off a bash script') {
-          agent any
-          steps {
-            sh 'echo "There has to be something going on with Dockr for this to be working. "'
-          }
-        }
-
+      steps {
+        powershell 'Write-Host \'Jim is amazing\''
       }
     }
 
