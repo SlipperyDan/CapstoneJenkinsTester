@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('WhyWasThisNamedError') {
       steps {
         echo 'Dab'
       }
