@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Test B.O. 1.0') {
+    stage('Git Notification Received') {
       steps {
-        echo 'Commit Notice Test 1'
+        git(url: 'https://github.com/SlipperyDan/CapstoneJenkinsTester', branch: 'CommitTest')
       }
     }
 
