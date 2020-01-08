@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('WhyWasThisNamedError') {
+    stage('Kick Off A Powershell script') {
       steps {
-        echo 'Dab'
+        powershell 'Write-Host \'Jim is amazing\''
       }
     }
 
