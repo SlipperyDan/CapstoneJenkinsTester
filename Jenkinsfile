@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Kick Off A Powershell Script') {
+      steps {
+        powershell 'Write-Host \'I wildly misunderstood how this pipeline tool works\''
+      }
+    }
+
   }
 }
