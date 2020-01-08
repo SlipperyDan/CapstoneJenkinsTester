@@ -17,11 +17,7 @@ pipeline {
 
         stage('Kick off a bash script') {
           steps {
-            sh '''#! /bin/bash
-
-clear
-
-echo "There has to be something going on with Dockr for this to be working. "'''
+            sh 'echo "There has to be something going on with Dockr for this to be working. "'
           }
         }
 
