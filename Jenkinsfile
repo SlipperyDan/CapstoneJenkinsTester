@@ -9,7 +9,7 @@ pipeline {
 
     stage('Start linux via Powershell') {
       steps {
-        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\zap.ps1'
+        powershell '.\\C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\zap.ps1'
       }
     }
 
