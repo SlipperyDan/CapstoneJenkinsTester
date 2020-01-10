@@ -7,20 +7,9 @@ pipeline {
       }
     }
 
-    stage('Kick Off A Powershell Script') {
-      parallel {
-        stage('Kick Off A Powershell Script') {
-          steps {
-            powershell 'Write-Host \'I wildly misunderstood how this pipeline tool works\''
-          }
-        }
-
-        stage('Start linux via Powershell') {
-          steps {
-            powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\makeADirectory.sh'
-          }
-        }
-
+    stage('Start linux via Powershell') {
+      steps {
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\zoop.ps1'
       }
     }
 
