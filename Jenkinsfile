@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Kick Off A Powershell Script') {
-      steps {
-        powershell 'Write-Host \'I wildly misunderstood how this pipeline tool works\''
+      parallel {
+        stage('Kick Off A Powershell Script') {
+          steps {
+            powershell 'Write-Host \'I wildly misunderstood how this pipeline tool works\''
+          }
+        }
+
+        stage('') {
+          steps {
+            sh 'echo dab'
+          }
+        }
+
       }
     }
 
