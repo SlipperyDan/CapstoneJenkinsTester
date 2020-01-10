@@ -17,7 +17,7 @@ pipeline {
 
         stage('Start linux via Powershell') {
           steps {
-            powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\tester.sh'
+            powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\makeADirectory.sh'
           }
         }
 
