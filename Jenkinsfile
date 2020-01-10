@@ -15,9 +15,9 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('Start linux via Powershell') {
           steps {
-            sh 'echo dab'
+            powershell 'Debian'
           }
         }
 
