@@ -17,7 +17,7 @@ pipeline {
 
         stage('Start linux via Powershell') {
           steps {
-            powershell 'Debian'
+            powershell './tester.sh'
           }
         }
 
