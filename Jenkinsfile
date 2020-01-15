@@ -7,9 +7,27 @@ pipeline {
       }
     }
 
-    stage('Start linux via Powershell') {
+    stage('Build Ec2 Instance') {
       steps {
         powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\zoop.ps1'
+      }
+    }
+
+    stage('Unit Test') {
+      steps {
+        echo 'Pushed to week 3'
+      }
+    }
+
+    stage('Return Results') {
+      steps {
+        echo 'Week 4'
+      }
+    }
+
+    stage('Update Prod.') {
+      steps {
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CopyWebsiteUpdateS3Bucket.ps1'
       }
     }
 
