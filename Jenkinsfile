@@ -13,21 +13,15 @@ pipeline {
       }
     }
 
-    stage('Unit Test') {
+    stage('Delete Deprecated Local Repository') {
       steps {
-        echo 'Pushed to week 3'
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\DeleteCapstoneJenkinsTester.ps1'
       }
     }
 
-    stage('Return Results') {
+    stage('Download New Repository') {
       steps {
-        echo 'Week 4'
-      }
-    }
-
-    stage('Update Prod.') {
-      steps {
-        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CopyWebsiteUpdateS3Bucket.ps1'
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CloneGithubRepositoryUpdateWebsite.ps1'
       }
     }
 
