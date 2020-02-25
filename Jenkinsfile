@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('GrabUnitTestResults') {
+      steps {
+        s3Download(file: 'results.txt', bucket: 's3://dnostrom/', force: true, path: 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian')
+      }
+    }
+
   }
 }
