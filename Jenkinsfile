@@ -33,10 +33,7 @@ pipeline {
 
     stage('Check if Failed ') {
       steps {
-        warnError(message: 'See Documentation For Results') {
-          powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail'
-        }
-
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail.ps1'
       }
     }
 
