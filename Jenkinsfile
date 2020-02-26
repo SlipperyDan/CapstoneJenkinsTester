@@ -31,5 +31,11 @@ pipeline {
       }
     }
 
+    stage('Check if Failed ') {
+      steps {
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail'
+      }
+    }
+
   }
 }
