@@ -32,8 +32,19 @@ pipeline {
     }
 
     stage('Check if Failed ') {
-      steps {
-        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail'
+      parallel {
+        stage('Check if Failed ') {
+          steps {
+            powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail'
+          }
+        }
+
+        stage('Zoop') {
+          steps {
+            echo 'zoop'
+          }
+        }
+
       }
     }
 
