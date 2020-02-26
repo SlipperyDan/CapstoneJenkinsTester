@@ -48,20 +48,9 @@ pipeline {
       }
     }
 
-    stage('Update Index.py') {
-      parallel {
-        stage('Update Index.py') {
-          steps {
-            echo 'YAY :D'
-          }
-        }
-
-        stage('Rollback Github') {
-          steps {
-            echo 'AWWWWW'
-          }
-        }
-
+    stage('Round 2') {
+      steps {
+        echo 'TEST'
       }
     }
 
