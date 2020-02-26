@@ -45,32 +45,37 @@ pipeline {
           }
         }
 
-        stage('Round 5') {
+      }
+    }
+
+    stage('asdfgh') {
+      parallel {
+        stage('asdfgh') {
           steps {
-            echo 'asdafdsag'
+            echo 'zxdfgh'
+          }
+        }
+
+        stage('') {
+          steps {
+            echo 'zxdfghj'
           }
         }
 
       }
     }
 
-    stage('Round 2') {
+    stage('xcvn') {
       parallel {
-        stage('Round 2') {
+        stage('xcvn') {
           steps {
-            echo 'TEST'
+            echo 'sdfgh'
           }
         }
 
-        stage('Round 3') {
+        stage('dfgukjl') {
           steps {
-            echo 'zip'
-          }
-        }
-
-        stage('Round 4') {
-          steps {
-            echo 'sagasgfgasfg'
+            echo 'xfghnjhgfdf'
           }
         }
 
