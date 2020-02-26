@@ -26,25 +26,29 @@ pipeline {
     }
 
     stage('Download the Results') {
-      parallel {
-        stage('Download the Results') {
-          steps {
-            powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\downloadtheresults.ps1'
-          }
-        }
+      steps {
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\downloadtheresults.ps1'
+      }
+    }
 
-        stage('Check For Failure') {
-          steps {
-            powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail'
-          }
+    stage('Check if Failed ') {
+      steps {
+        warnError(message: 'See Documentation For Results') {
+          powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\CheckIfFail'
         }
 
       }
     }
 
-    stage('Dab') {
+    stage('DAB') {
       steps {
-        echo 'Dab'
+        echo ':\'('
+      }
+    }
+
+    stage('FORTHELOVEOFGOD') {
+      steps {
+        echo ':")'
       }
     }
 
