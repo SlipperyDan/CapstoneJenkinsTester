@@ -42,43 +42,22 @@ pipeline {
         stage('Zoop') {
           steps {
             echo 'zoop'
+            echo 'Zap'
           }
         }
 
       }
     }
 
-    stage('asdfgh') {
-      parallel {
-        stage('asdfgh') {
-          steps {
-            echo 'zxdfgh'
-          }
-        }
-
-        stage('') {
-          steps {
-            echo 'zxdfghj'
-          }
-        }
-
+    stage('DAB') {
+      steps {
+        echo ':\'('
       }
     }
 
-    stage('xcvn') {
-      parallel {
-        stage('xcvn') {
-          steps {
-            echo 'sdfgh'
-          }
-        }
-
-        stage('dfgukjl') {
-          steps {
-            echo 'xfghnjhgfdf'
-          }
-        }
-
+    stage('FORTHELOVEOFGOD') {
+      steps {
+        echo ':")'
       }
     }
 
