@@ -45,12 +45,35 @@ pipeline {
           }
         }
 
+        stage('Round 5') {
+          steps {
+            echo 'asdafdsag'
+          }
+        }
+
       }
     }
 
     stage('Round 2') {
-      steps {
-        echo 'TEST'
+      parallel {
+        stage('Round 2') {
+          steps {
+            echo 'TEST'
+          }
+        }
+
+        stage('Round 3') {
+          steps {
+            echo 'zip'
+          }
+        }
+
+        stage('Round 4') {
+          steps {
+            echo 'sagasgfgasfg'
+          }
+        }
+
       }
     }
 
