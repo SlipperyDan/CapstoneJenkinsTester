@@ -25,9 +25,9 @@ pipeline {
       }
     }
 
-    stage('GrabUnitTestResults') {
+    stage('Download the Results') {
       steps {
-        s3Download(file: 'results.txt', bucket: 's3://dnostrom/', force: true, path: 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian')
+        powershell 'C:\\Users\\Daniel\\Desktop\\ThisWasMadeViaDebian\\downloadtheresults.ps1'
       }
     }
 
