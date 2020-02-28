@@ -43,11 +43,5 @@ pipeline {
       }
     }
 
-    stage('FORTHELOVEOFGOD') {
-      steps {
-        echo ':")'
-      }
-    }
-
   }
 }
