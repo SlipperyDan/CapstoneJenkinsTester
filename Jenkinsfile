@@ -37,11 +37,5 @@ pipeline {
       }
     }
 
-    stage('DAB') {
-      steps {
-        echo ':\'('
-      }
-    }
-
   }
 }
