@@ -1,10 +1,4 @@
 # CapstoneJenkinsTester
 
 
-MUDA MUDA MUDA MUDA
-
-ORAORAORAORA
-
-YUH
-
-Send me an email
+This is what happens when the unit tests fail. 
